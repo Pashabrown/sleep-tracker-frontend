@@ -30,7 +30,7 @@ function Show(props) {
       
       <h1>{sleep.date}</h1>
       <h2>{sleep.duration}</h2>
-      <img src={sleep.quality} alt={sleep.name} />
+      <h2>{sleep.quality}  </h2>
       <h2>{sleep.enviornment}</h2>
       <h2>{sleep.Disruptors}</h2>
       <button id="delete" onClick={removeSleep}>Delete</button>
@@ -45,30 +45,37 @@ function Show(props) {
                 
             />
             <input 
-                type="text"
-                value={editForm.affirmation}
-                name="affirmation"
-                placeholder="affirmation"
+                type={Number}
+                value={editForm.duration}
+                name="duration"
+                placeholder="duration"
                 onChange={handleChange}
                 
             />
 
             <input
                 type="text"
-                value={editForm.confirmation}
-                name="confirmation"
-                placeholder="confirmation"
+                value={editForm.quality}
+                name="quality"
+                placeholder="quality"
                 onChange={handleChange}
                 />
 
             <input
-                type={Number}
-                value={editForm.feeling}
-                name="feeling"
-                placeholder="feeling"
+                type="text"
+                value={editForm.enviornment}
+                name="enviornment"
+                placeholder="enviornment"
                 onChange={handleChange}
             />
-            <input type="submit" value="Update Affirm"/>
+            <input
+                type="text"
+                value={editForm.Disruptors}
+                name="Disruptors"
+                placeholder="Disruptors"
+                onChange={handleChange}
+                />
+            <input type="submit" value="Update Sleep"/>
             
         </form>
     </div>

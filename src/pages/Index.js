@@ -92,7 +92,7 @@ function Index(props){
         />
         <input
           type="text"
-          value={newForm.environment}
+          value={newForm.enviornment}
           name="enviornment"
           placeholder="enviornment"
           onChange={handleChange}
@@ -100,8 +100,8 @@ function Index(props){
         <input
           type="text"
           value={newForm.Disruptors}
-          name="disruptors"
-          placeholder="disruptors"
+          name="Disruptors"
+          placeholder="Disruptors"
           onChange={handleChange}
         />
         <input type="submit" value="Create Sleep-Tracker" />
