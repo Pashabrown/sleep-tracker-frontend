@@ -42,7 +42,7 @@ function Index(props){
     return props.sleeps.map((sleep) => (
       <div key={sleep._id} className="sleep" background="black">
           <Helmet>
-                <style>{'body { background-color: red; }'}</style>
+                <style>{'body { background-color: grey; }'}</style>
             </Helmet>
         <hr></hr>
         <Link to={`/sleeps/${sleep._id}`}><h1>{sleep.date}</h1></Link>
@@ -55,7 +55,7 @@ function Index(props){
       
     ));
   };
-  
+ 
   const loading = () => {
         return <h1>Loading...</h1>
     }
@@ -92,9 +92,9 @@ function Index(props){
         />
         <input
           type="text"
-          value={newForm.enviornment}
-          name="enviornment"
-          placeholder="enviornment"
+          value={newForm.environment}
+          name="environment"
+          placeholder="environment"
           onChange={handleChange}
         />
         <input
