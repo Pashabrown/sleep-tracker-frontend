@@ -46,11 +46,13 @@ function Index(props){
             </Helmet>
         <hr></hr>
         <Link to={`/sleeps/${sleep._id}`}><h1>{sleep.date}</h1></Link>
-        <h4>{sleep.duration} </h4>
-        <h4>{sleep.quality}</h4>
-        <h4>{sleep.environment}</h4>
-        <h4>{sleep.Disruptors}</h4>
+        <h4>{sleep.duration} -hours</h4>
+        <h4>{sleep.quality} -sleep quality</h4>
+        <h4>{sleep.environment} -environment</h4>
+        <h4>{sleep.Disruptors} -disruptors</h4>
+        
         <hr></hr>
+        <Link to={`/sleeps/${sleep._id}`}>Edit Sleep- {sleep.date}</Link>
       </div>
       
     ));
@@ -73,6 +75,7 @@ function Index(props){
           placeholder="date"
           onChange={handleChange}
         />
+        
         <input
           type={Number}
           value={newForm.duration}
