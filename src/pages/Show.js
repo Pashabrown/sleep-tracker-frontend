@@ -29,10 +29,10 @@ function Show(props) {
     <div className="sleep">
       
       <h1>{sleep.date}</h1>
-      <h2>{sleep.duration}</h2>
-      <h2>{sleep.quality}  </h2>
-      <h2>{sleep.environment}</h2>
-      <h2>{sleep.Disruptors}</h2>
+      <h2>{sleep.duration} -hours</h2>
+      <h2>{sleep.quality}  -sleep quality</h2>
+      <h2>{sleep.environment} -environment</h2>
+      <h2>{sleep.Disruptors} -disruptors</h2>
       <button id="delete" onClick={removeSleep}>Delete</button>
 
         <form onSubmit={handleSubmit}>

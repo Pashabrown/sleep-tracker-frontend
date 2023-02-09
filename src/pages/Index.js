@@ -52,7 +52,7 @@ function Index(props){
         <h4>{sleep.Disruptors} -disruptors</h4>
         
         <hr></hr>
-        <Link to={`/sleeps/${sleep._id}`}>Edit Sleep- {sleep.date}</Link>
+       <h5> <Link to={`/sleeps/${sleep._id}`}>Edit Sleep- {sleep.date}</Link></h5>
       </div>
       
     ));
