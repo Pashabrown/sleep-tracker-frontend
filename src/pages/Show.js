@@ -15,7 +15,7 @@ function Show(props) {
 
   const handleSubmit = event => {
     event.preventDefault()
-    props.updateAffirms(editForm, sleep._id)
+    props.updateSleeps(editForm, sleep._id)
     props.history.push("/")
   }
 
@@ -31,7 +31,7 @@ function Show(props) {
       <h1>{sleep.date}</h1>
       <h2>{sleep.duration}</h2>
       <h2>{sleep.quality}  </h2>
-      <h2>{sleep.enviornment}</h2>
+      <h2>{sleep.environment}</h2>
       <h2>{sleep.Disruptors}</h2>
       <button id="delete" onClick={removeSleep}>Delete</button>
 
@@ -63,9 +63,9 @@ function Show(props) {
 
             <input
                 type="text"
-                value={editForm.enviornment}
-                name="enviornment"
-                placeholder="enviornment"
+                value={editForm.environment}
+                name="environment"
+                placeholder="environment"
                 onChange={handleChange}
             />
             <input

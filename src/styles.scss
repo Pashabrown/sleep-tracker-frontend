@@ -2,7 +2,7 @@
 // VARIABLES
 // -----------------------------
 $maincolor: black;
-$contrastcolor: white;
+$contrastcolor: rgb(225, 214, 58);
 
 @mixin white-text-black-bg {
     color: $contrastcolor;
@@ -26,7 +26,7 @@ nav {
         @include white-text-black-bg;
 
         div {
-            margin: 10px;
+            margin: 100px;
             font-size: large;
         }
     }

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function NameList() {
-  const [list, setList] = useState(["Notes"]);
+  const [list, setList] = useState(["Thoughts"]);
   const [name, setName] = useState(() => "");
 
   const onAddName = () => {
@@ -10,7 +10,7 @@ function NameList() {
   };
 
   return (
-    <div>
+    <nav>
       <ul>
         {list.map((name) => (
           <li key={name}>{name}</li>
@@ -22,7 +22,7 @@ function NameList() {
         onChange={(e) => setName(e.target.value)}
       />
       <button onClick={onAddName}>Add Notes</button>
-    </div>
+    </nav>
   );
 }
 

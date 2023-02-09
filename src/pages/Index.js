@@ -46,10 +46,10 @@ function Index(props){
             </Helmet>
         <hr></hr>
         <Link to={`/sleeps/${sleep._id}`}><h1>{sleep.date}</h1></Link>
-        <h3>{sleep.duration} {sleep.name} </h3>
-        <h3>{sleep.quality}</h3>
-        <h3>{sleep.environment}</h3>
-        <h3>{sleep.Disruptors}</h3>
+        <h4>{sleep.duration} </h4>
+        <h4>{sleep.quality}</h4>
+        <h4>{sleep.environment}</h4>
+        <h4>{sleep.Disruptors}</h4>
         <hr></hr>
       </div>
       
@@ -62,6 +62,8 @@ function Index(props){
 
       
   return <section>
+   <a> <div>Add Sleep DATA here</div></a>
+    <br></br>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
